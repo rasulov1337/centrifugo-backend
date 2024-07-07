@@ -1,6 +1,6 @@
 FROM centrifugo/centrifugo
 
-COPY centrifugo/config.json /centrifugo/config.json
+COPY configs/centrifugo.json /configs/centrifugo.json
 
 EXPOSE 8010
 
