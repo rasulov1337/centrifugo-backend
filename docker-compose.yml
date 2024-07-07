@@ -1,0 +1,15 @@
+services:
+  centrifugo:
+    image: centrifugo/centrifugo:latest
+    command: centrifugo -c /centrifugo/config.json
+    volumes:
+      - ./configs/centrifugo.json:/centrifugo/config.json
+    ports:
+      - "8010:8010"
+    networks:
+      - ggmsgr
+
+
+networks:
+  ggmsgr:
+    driver: bridge
