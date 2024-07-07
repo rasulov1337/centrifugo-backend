@@ -1,4 +1,4 @@
-FROM centrifugo/centrifugo:2.9.0
+FROM centrifugo/centrifugo
 
 COPY centrifugo/config.json /centrifugo/config.json
 
