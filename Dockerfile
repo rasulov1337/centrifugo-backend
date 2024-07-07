@@ -4,4 +4,4 @@ COPY configs/centrifugo.json /configs/centrifugo.json
 
 EXPOSE 8010
 
-CMD ["centrifugo", "--config", "/centrifugo/config.json"]
+CMD ["centrifugo", "--config", "/configs/centrifugo.json"]
